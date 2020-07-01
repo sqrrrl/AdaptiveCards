@@ -6,8 +6,8 @@
 | -------- | ---- | -------- | ----------- | ------- |
 | **type** | `"Input.Number"` | Yes | Must be `"Input.Number"`. | 1.0 |
 | **id** | `string` | Yes | Unique identifier for the value. Used to identify collected input when the Submit action is performed. | 1.0 |
-| **max** | `number` | No | Hint of maximum value (may be ignored by some clients). | 1.0 |
-| **min** | `number` | No | Hint of minimum value (may be ignored by some clients). | 1.0 |
+| **max** | `number` | No | Maximum value (may be ignored by some clients prior to version 1.3). | 1.0 |
+| **min** | `number` | No | Minimum value (may be ignored by some clients prior to version 1.3). | 1.0 |
 | **placeholder** | `string` | No | Description of the input desired. Displayed when no selection has been made. | 1.0 |
 | **value** | `number` | No | Initial value for this field. | 1.0 |
 

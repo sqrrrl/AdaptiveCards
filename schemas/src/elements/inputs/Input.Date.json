@@ -5,11 +5,11 @@
   "properties": {
     "max": {
       "type": "string",
-      "description": "Hint of maximum value expressed in YYYY-MM-DD(may be ignored by some clients)."
+      "description": "Maximum value expressed in YYYY-MM-DD (may be ignored by some clients prior to version 1.3)."
     },
     "min": {
       "type": "string",
-      "description": "Hint of minimum value expressed in YYYY-MM-DD(may be ignored by some clients)."
+      "description": "Minimum value expressed in YYYY-MM-DD (may be ignored by some clients prior to version 1.3)."
     },
     "placeholder": {
       "type": "string",

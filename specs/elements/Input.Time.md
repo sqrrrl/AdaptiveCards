@@ -6,8 +6,8 @@
 | -------- | ---- | -------- | ----------- | ------- |
 | **type** | `"Input.Time"` | Yes | Must be `"Input.Time"`. | 1.0 |
 | **id** | `string` | Yes | Unique identifier for the value. Used to identify collected input when the Submit action is performed. | 1.0 |
-| **max** | `string` | No | Hint of maximum value expressed in HH:MM (may be ignored by some clients). | 1.0 |
-| **min** | `string` | No | Hint of minimum value expressed in HH:MM (may be ignored by some clients). | 1.0 |
+| **max** | `string` | No | Maximum value expressed in HH:MM (may be ignored by some clients prior to version 1.3). | 1.0 |
+| **min** | `string` | No | Minimum value expressed in HH:MM (may be ignored by some clients prior to version 1.3). | 1.0 |
 | **placeholder** | `string` | No | Description of the input desired. Displayed when no time has been selected. | 1.0 |
 | **value** | `string` | No | The initial value for this field expressed in HH:MM. | 1.0 |
 

@@ -5,11 +5,11 @@
   "properties": {
     "max": {
       "type": "number",
-      "description": "Hint of maximum value (may be ignored by some clients)."
+      "description": "Maximum value (may be ignored by some clients prior to version 1.3)."
     },
     "min": {
       "type": "number",
-      "description": "Hint of minimum value (may be ignored by some clients)."
+      "description": "Minimum value (may be ignored by some clients prior to version 1.3)."
     },
     "placeholder": {
       "type": "string",
