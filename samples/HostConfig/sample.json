@@ -268,5 +268,12 @@
 			"wrap": true
 		},
 		"spacing": 8
+	},
+	"inputs": {
+		"label": {
+			"requiredInputs": {
+				"suffix": " (required)"
+			}
+		}
 	}
 }
