@@ -323,7 +323,9 @@ namespace AdaptiveCards.Rendering.Wpf
         /// <summary>
         /// Encloses the element in a panel to ease the showing/hiding of elements
         /// </summary>
-        /// <param name="renderedElement">UIElement</param>
+        /// <param name="context"></param>
+        /// <param name="element"></param>
+        /// <param name="renderedElement"></param>
         /// <returns>Panel that encloses the element</returns>
         public static UIElement EncloseElementInPanel(AdaptiveRenderContext context, AdaptiveTypedElement element, FrameworkElement renderedElement)
         {
@@ -354,7 +356,7 @@ namespace AdaptiveCards.Rendering.Wpf
                 }
 
                 AutomationProperties.SetIsRequiredForForm(elementForAccessibility, inputElement.IsRequired);
-
+                // TODO: Should this be IsNullorWhiteSpace() instead? 
                 if ((!String.IsNullOrEmpty(inputElement.Label)) || (!String.IsNullOrEmpty(inputElement.ErrorMessage)))
                 {
                     TagContent tag = renderedElement.Tag as TagContent;

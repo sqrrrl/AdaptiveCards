@@ -46,9 +46,13 @@ namespace AdaptiveCards.Rendering.Html
         public HtmlTag Style(string name, string value)
         {
             if (value == null)
+            {
                 Styles.Remove(name);
+            }
             else
+            {
                 Styles[name] = value;
+            }
             return this;
         }
 
@@ -61,18 +65,26 @@ namespace AdaptiveCards.Rendering.Html
         public HtmlTag Attr(string name, string value)
         {
             if (value == null)
+            {
                 this.Attributes.Remove(name);
+            }
             else
+            {
                 this.Attributes[name] = value;
+            }
             return this;
         }
 
         public HtmlTag Attr(string name, Uri value)
         {
             if (value == null)
+            {
                 this.Attributes.Remove(name);
+            }
             else
+            {
                 this.Attributes[name] = value.ToString();
+            }
             return this;
         }
 

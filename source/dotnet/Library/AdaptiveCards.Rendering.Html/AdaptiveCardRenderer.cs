@@ -1638,7 +1638,21 @@ namespace AdaptiveCards.Rendering.Html
                 .AddClass("ac-input")
                 .AddClass("ac-dateInput")
                 .Style("width", "100%")
-                .Attr("aria-label", (input.Placeholder ?? "Select date") + " in mm/dd/yyyy format");
+                .Attr("aria-label", (input.Placeholder ?? "Select date") + " in mm/dd/yyyy format"); //using aria-label to indicate placeholder text as label
+
+            if (!string.IsNullOrEmpty(input.Label))
+            {
+                var htmlLabelId = GenerateRandomId();
+                uiDateInput.Attr("aria-labelledby", htmlLabelId);
+                var htmlLabelTag = CreateLabel(htmlLabelId, input.Label, context);
+                uiDateInput.Append(htmlLabelTag);
+            }
+
+            if (input.IsRequired)
+            {
+                uiDateInput.Attr("required", input.IsRequired.ToString());
+                uiDateInput.Attr("aria-required", input.IsRequired.ToString());
+            }
 
             if (!string.IsNullOrEmpty(input.Value))
             {
