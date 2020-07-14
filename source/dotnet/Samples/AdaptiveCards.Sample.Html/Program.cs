@@ -1,14 +1,14 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using AdaptiveCards.Rendering;
 using AdaptiveCards.Rendering.Html;
-using System.Diagnostics;
-using System.Text;
 using McMaster.Extensions.CommandLineUtils;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
+using System.Linq;
+using System.Text;
 
 namespace AdaptiveCards.Sample.Html
 {

@@ -1,13 +1,9 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
 using System.Linq;
-using System.Net;
-using Newtonsoft.Json;
-using AdaptiveCards;
 
 namespace AdaptiveCards.Rendering.Html
 {
@@ -522,7 +518,7 @@ namespace AdaptiveCards.Rendering.Html
                                 {
                                     uiSeparator.Style("display", "none");
                                 }
-                                
+
                                 isFirstVisibleElement = false;
                             }
                         }
@@ -1620,7 +1616,7 @@ namespace AdaptiveCards.Rendering.Html
 
         private static void ApplyDefaultTextAttributes(HtmlTag tag, AdaptiveRenderContext context)
         {
-// Ignore deprecation warning for FontSizes
+            // Ignore deprecation warning for FontSizes
 #pragma warning disable 0618
             tag.Style("color", context.GetColor(AdaptiveTextColor.Default, false, false))
                 .Style("font-size", $"{context.Config.FontSizes.Default}px")
@@ -1781,7 +1777,7 @@ namespace AdaptiveCards.Rendering.Html
                         .Style("display", "flex")
                         .Attr("name", input.Id);
 
-                    if(input.Height == AdaptiveHeight.Stretch)
+                    if (input.Height == AdaptiveHeight.Stretch)
                     {
                         uiContainer.Style("flex", "1 1 100%");
                     }

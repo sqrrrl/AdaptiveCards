@@ -1,11 +1,11 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
+using Microsoft.MarkedNet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml;
 using System.Xml.Linq;
-using Microsoft.MarkedNet;
 
 namespace AdaptiveCards.Rendering.Html
 {
